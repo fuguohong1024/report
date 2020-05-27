@@ -1,0 +1,13 @@
+#Dsn string
+#Query string
+#Name string
+#To []string
+title = "config"
+[Mysql]
+dsn="root:123456@tcp(127.0.0.1:3306)/test"
+query="select * from tb_device_prod;"
+[Mail]
+name="report"
+#发送邮箱
+to=["1181520428@qq.com","fuguohong1024@yeah.net"]
+spec="10 46 20 * * *"
