@@ -16,7 +16,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"test/conf"
+	"report/conf"
 	"time"
 )
 
