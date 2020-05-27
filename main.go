@@ -52,6 +52,7 @@ func sendMail(){
 	//e.Text = []byte("Text Body is, of course, supported!")
 	e.HTML = []byte("<h1>附件为"+name+"数据，请查收</h1>")
 	e.Attachments = slice
+	//端口25一般都禁了，用465或587试
 	err := e.Send("smtp.sina.com:587", smtp.PlainAuth("", "17713603104m@sina.cn", "授权码", "smtp.sina.com"))
 	if err != nil {
 		log.Println(err)
